@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="NSwag.AspNetCore" Version="13.1.6" />
+    <PackageReference Include="NSwag.Core" Version="13.1.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CQRS_Assignment.Common\CQRS_Assignment.Common.csproj" />
+    <ProjectReference Include="..\CQRS_Assignment.Repository\CQRS_Assignment.Repository.csproj" />
+    <ProjectReference Include="..\CQRS_Assignment.Service\CQRS_Assignment.Service.csproj" />
+  </ItemGroup>
+
+</Project>
